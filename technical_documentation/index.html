@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Data Structure</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main id="main-doc">
+     <nav id="navbar">
+       <header>C++ DOCUMENTATION</header>
+       <ul>
+         <li><a class="nav-link" href="#INTRODUCTION">INTRODUCTION</a></li>
+         <li><a class="nav-link" href="#C++_GET_STARTED">C++ GET STARTED</a></li>
+         <li><a class="nav-link" href="#C++_VARIABLES">C++ VARIABLES</a></li>
+<li><a class="nav-link" href="#C++_DATA_TYPES">C++ DATA TYPES</a></li>
+  <li><a class="nav-link" href="#C++_OPERATORS">C++ OPERATORS</a></li>
+     </ul>
+     </nav>
+      
+  
+    <div id="main-section">
+        <section id="INTRODUCTION" class="main-section">
+          <header>INTRODUCTION</header>
+          <article>
+          <p><h2>What is C++?</h2></p>
+          <p>C++ is a cross-platform language that can be used to create high-performance applications.<p>
+          <p>C++ gives programmers a high level of control over system resources and memory.</p>
+          <p><h2>Why Use C++?</h2></p>
+          <p>C++ is one of the world's most popular programming languages.</p>
+          <p>C++ can be found in today's operating systems, Graphical User Interfaces, and embedded systems.</p>
+
+<p>C++ is an object-oriented programming language which gives a clear structure to programs and allows code to be reused, lowering development costs.</p>
+
+<p>C++ is portable and can be used to develop applications that can be adapted to multiple platforms.</p>
+
+<p>C++ is fun and easy to learn!</p>
+         </article>
+        </section>
+<section id="C++_GET_STARTED" class="main-section">
+<header>C++ GET STARTED</header>
+<article>
+  <p><h2>C++ Get Started</h2></p>
+  <p>To start using C++, you need two things:</p>
+  <ul>
+    <li>A text editor, like Notepad, to write C++ code</li>
+    <li>A compiler, like GCC, to translate the C++ code into a language that the computer will understand</li>
+  </ul>
+  <p>There are many text editors and compilers to choose from. In this tutorial, we will use an IDE (see below).</p>
+  <p><h2>C++ Install IDE</h2></p>
+  <p>An IDE (Integrated Development Environment) is used to edit AND compile the code.</p>
+  <p>Popular IDE's include Code::Blocks, Eclipse, and Visual Studio. These are all free, and they can be used to both edit and debug C++ code.</p>
+  <p><strong>Note:</strong> Web-based IDE's can work as well, but functionality is limited.</p>
+  <p>We will use Code::Blocks in our tutorial, which we believe is a good place to start.</p>
+  <p>You can find the latest version of Codeblocks at <a href="https://www.codeblocks.org/downloads/binaries/">http://www.codeblocks.org/</a> Download the <strong> mingw-setup.exe</strong> file, which will install the text editor with a compiler.
+</p>
+<p><h2>First C++ Program:</h2></p>
+<code>
+  #include iostream
+using namespace std;
+
+// main() is where program execution begins.
+int main() {
+   cout << "Hello World"; // prints Hello World
+   return 0;
+}
+</code>
+  </article>
+  </section>
+  <section id="C++_VARIABLES" class="main-section">
+<header>C++ VARIABLES</header>
+<article>
+  <p><h2>C++ Variables</h2></p>
+  <p>Variables are containers for storing data values.</p>
+<p>In C++, there are different types of variables (defined with different keywords), for example: </p>
+<ul>
+<li><strong>int</strong> - stores integers (whole numbers), without decimals, such as 123 or -123</li>
+<li><strong>double</strong> - stores floating point numbers, with decimals, such as 19.99 or -19.99</li>
+<li><strong>char</strong> - stores single characters, such as 'a' or 'B'. Char values are surrounded by single quotesdouble - stores floating point numbers, with decimals, such as 19.99 or -19.99</li>
+<li><strong>string</strong> - stores text, such as "Hello World". String values are surrounded by double quotes</li>
+<li><strong>bool</strong> - stores values with two states: true or false</li>
+</ul>
+<p><strong>Syntex: </strong></p>
+<p><em>type variablename = value;</em></p>
+<p><strong>some examples are:</strong></p>
+<code>
+  extern int d = 3, f = 5;    // declaration of d and f. 
+int d = 3, f = 5;           // definition and initializing d and f. 
+byte z = 22;                // definition and initializes z. 
+char x = 'x';               // the variable x has the value 'x'.
+</code>
+<p><strong>Example:</strong></p>
+<code>
+#include iostream
+using namespace std;
+
+// Variable declaration:
+extern int a, b;
+extern int c;
+extern float f;
+  
+int main () {
+   // Variable definition:
+   int a, b;
+   int c;
+   float f;
+ 
+   // actual initialization
+   a = 10;
+   b = 20;
+   c = a + b;
+ 
+   cout << c << endl ;
+
+   f = 70.0/3.0;
+   cout << f << endl ;
+ 
+   return 0;
+}
+  </code>
+</article>
+  </section>
+  <section id="C++_DATA_TYPES" class="main-section">
+<header>C++ DATA TYPES</header>
+<article>
+  <p><h2>Basic Data Types</h2></p>
+  <div class="table" style="margin:-16px 0">
+  <table class="data">
+    <thead>
+      <tr>
+        <th style="width:15%">Data Type</th>
+        <th style="width:15%">Size</th>
+        <th style="width:70%">Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>boolean</strong></td>
+        <td>1 byte</td>
+        <td>Stores true or false values</td>
+      </tr>
+      <tr>
+        <td><strong>char</strong></td>
+        <td>1 byte</td>
+        <td>Stores a single character/letter/number, or ASCII values</td>
+      </tr>
+      <tr>
+        <td><strong>int</strong></td>
+        <td>2 or 4 byte</td>
+        <td>Stores whole numbers, without decimals</td>
+      </tr>
+      <tr>
+        <td><strong>float</strong></td>
+        <td>4 byte</td>
+        <td>Stores fractional numbers, containing one or more decimals. Sufficient for storing 6-7 decimal digits</td>
+      </tr>
+      <tr>
+        <td><strong>double</strong></td>
+        <td>8 byte</td>
+        <td>Stores fractional numbers, containing one or more decimals. Sufficient for storing 15 decimal digits</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+  <p><strong>Example:</strong></p>
+  <code>#include iostream
+        using namespace std;
+
+       int main() {
+       cout << "Size of char : " << sizeof(char) << endl;
+       cout << "Size of int : " << sizeof(int) << endl;
+       cout << "Size of short int : " << sizeof(short int) << endl;
+       cout << "Size of long int : " << sizeof(long int) << endl;
+       cout << "Size of float : " << sizeof(float) << endl;
+       cout << "Size of double : " << sizeof(double) << endl;
+       cout << "Size of wchar_t : " << sizeof(wchar_t) << endl;
+   
+       return 0;
+       }
+       </code>
+</article>
+</section>
+  <section id="C++_OPERATORS" class="main-section">
+<header>C++ OPERATORS</header>
+<article>
+  <p><h2>Arithmetic Operators</h2></p>
+  <p>There are following arithmetic operators supported by C++ language −</p>
+  <p>Assume variable A holds 10 and variable B holds 20, then −</p>
+<div class="table" style="margin:-16px 0">
+  <table class="data">
+    <thead>
+      <tr>
+        <th style="width:10%">Operator</th>
+        <th style="width:50%">Description</th>
+        <th style="width:40%">Example</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>+</strong></td>
+        <td>Adds two operands</td>
+        <td>A + B will give 30</td>
+      </tr>
+      <tr>
+        <td><strong>-</strong></td>
+        <td>Subtracts second operand from the first</td>
+        <td>A - B will give -10</td>
+      </tr>
+      <tr>
+        <td><strong>*</strong></td>
+        <td>Multiplies both operands</td>
+        <td>A * B will give 200</td>
+      </tr>
+      <tr>
+        <td><strong>/</strong></td>
+        <td>Divides numerator by de-numerator</td>
+        <td>B / A will give 2</td>
+      </tr>
+      <tr>
+        <td><strong>%</strong></td>
+        <td>Modulus Operator and remainder of after an integer division</td>
+        <td>B % A will give 0</td>
+      </tr>
+      <tr>
+        <td><strong>++</strong></td>
+        <td><strong><b>Increment operator,</b></strong> increases integer value by one</td>
+        <td>A++ will give 11</td>
+      </tr>
+      <tr>
+        <td><strong>--</strong></td>
+        <td><strong><b>Decrement operator,</b></strong> decreases integer value by one</td>
+        <td>A-- will give 9</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+<code>// CPP Program to demonstrate the Arithmetic Operators
+#include iostream
+using namespace std;
+
+int main()
+{
+	int a = 8, b = 3;
+
+	// Addition operator
+	cout << "a + b = " << (a + b) << endl;
+
+	// Subtraction operator
+	cout << "a - b = " << (a - b) << endl;
+
+	// Multiplication operator
+	cout << "a * b = " << (a * b) << endl;
+
+	// Division operator
+	cout << "a / b = " << (a / b) << endl;
+
+	// Modulo operator
+	cout << "a % b = " << (a % b) << endl;
+
+	return 0;
+}
+
+  </code>
+    <p><h2>Relational Operators</h2></p>
+  <p>There are following relational operators supported by C++ language −</p>
+  <p>Assume variable A holds 10 and variable B holds 20, then −</p>
+<div class="table" style="margin:-16px 0">
+  <table class="data">
+    <thead>
+      <tr>
+        <th style="width:10%">Operator</th>
+        <th style="width:50%">Description</th>
+        <th style="width:40%">Example</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>==</strong></td>
+        <td>Checks if the values of two operands are equal or not, if yes then condition becomes true.</td>
+        <td>(A == B) is not true.</td>
+      </tr>
+      <tr>
+        <td><strong>!=</strong></td>
+        <td>Checks if the values of two operands are equal or not, if values are not equal then condition becomes true.</td>
+        <td>(A != B) is true.</td>
+      </tr>
+      <tr>
+        <td><strong>></strong></td>
+        <td>Checks if the value of left operand is greater than the value of right operand, if yes then condition becomes true.</td>
+        <td>(A > B) is not true.</td>
+      </tr>
+      <tr>
+        <td><strong><</strong></td>
+        <td>Checks if the value of left operand is less than the value of right operand, if yes then condition becomes true.</td>
+        <td>(A < B) is true.</td>
+      </tr>
+      <tr>
+        <td><strong>>=</strong></td>
+        <td>Checks if the value of left operand is greater than or equal to the value of right operand, if yes then condition becomes true.</td>
+        <td>(A >= B) is not true.</td>
+      </tr>
+      <tr>
+        <td><strong><=</strong></td>
+        <td>Checks if the value of left operand is less than or equal to the value of right operand, if yes then condition becomes true.</td>
+        <td>(A <= B) is true.</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+  <p><strong>Example:</strong></p>
+  <code>// CPP Program to demonstrate the Relational Operators
+#include iostream
+using namespace std;
+ 
+int main()
+{
+    int a = 6, b = 4;
+ 
+    // Equal to operator
+    cout << "a == b is " << (a == b) << endl;
+   
+    // Greater than operator
+    cout << "a > b is " << (a > b) << endl;
+   
+    // Greater than or Equal to operator
+    cout << "a >= b is " << (a >= b) << endl;
+   
+    //  Lesser than operator
+    cout << "a < b is " << (a < b) << endl;
+   
+    // Lesser than or Equal to operator
+    cout << "a <= b is " << (a <= b) << endl;
+   
+    // true
+    cout << "a != b is " << (a != b) << endl;
+ 
+    return 0;
+}
+  </code>
+  <p><h2>Logical Operators</h2></p>
+  <p>There are following relational operators supported by C++ language −</p>
+  <p>Assume variable A holds 1 and variable B holds 0, then −</p>
+<div class="table" style="margin:-16px 0">
+  <table class="data">
+    <thead>
+      <tr>
+        <th style="width:10%">Operator</th>
+        <th style="width:50%">Description</th>
+        <th style="width:40%">Example</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>&&</strong></td>
+        <td>Called Logical AND operator. If both the operands are non-zero, then condition becomes true.</td>
+        <td>(A && B) is false.</td>
+      </tr>
+      <tr>
+        <td><strong>||</strong></td>
+        <td>Called Logical OR Operator. If any of the two operands is non-zero, then condition becomes true.</td>
+        <td>(A || B) is true.</td>
+      </tr>
+      <tr>
+        <td><strong>!</strong></td>
+        <td>Called Logical NOT Operator. Use to reverses the logical state of its operand. If a condition is true, then Logical NOT operator will make false.</td>
+        <td>!(A && B) is true.</td>
+      </tr>
+</tbody>
+  </table>
+  </div>
+  <code>// CPP Program to demonstrate the Logical Operators
+#include iostream
+using namespace std;
+
+int main()
+{
+	int a = 6, b = 4;
+
+	// Logical AND operator
+	cout << "a && b is " << (a && b) << endl;
+
+	// Logical OR operator
+	cout << "a ! b is " << (a > b) << endl;
+
+	// Logical NOT operator
+	cout << "!b is " << (!b) << endl;
+
+	return 0;
+}
+
+  </code>
+  <p><h2>Bitwise Operators</h2></p>
+  <p>The Bitwise operators supported by C++ language are listed in the following table. Assume variable A holds 60 and variable B holds 13, then −</p>
+<div class="table" style="margin:-16px 0">
+  <table class="data">
+    <thead>
+      <tr>
+        <th style="width:10%">Operator</th>
+        <th style="width:50%">Description</th>
+        <th style="width:40%">Example</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>&</strong></td>
+        <td>Binary AND Operator copies a bit to the result if it exists in both operands.</td>
+        <td>(A & B) will give 12 which is 0000 1100</td>
+      </tr>
+      <tr>
+        <td><strong>|</strong></td>
+        <td>Binary OR Operator copies a bit if it exists in either operand.</td>
+        <td>(A | B) will give 61 which is 0011 1101</td>
+      </tr>
+      <tr>
+        <td><strong>^</strong></td>
+        <td>Binary XOR Operator copies the bit if it is set in one operand but not both.</td>
+        <td>(A ^ B) will give 49 which is 0011 0001</td>
+      </tr>
+      <tr>
+        <td><strong>~</strong></td>
+        <td>Binary Ones Complement Operator is unary and has the effect of 'flipping' bits.</td>
+        <td>(~A ) will give -61 which is 1100 0011 in 2's complement form due to a signed binary number.</td>
+      </tr>
+      <tr>
+        <td><strong><<</strong></td>
+        <td>Binary Left Shift Operator. The left operands value is moved left by the number of bits specified by the right operand.</td>
+        <td>A << 2 will give 240 which is 1111 0000</td>
+      </tr>
+      <tr>
+        <td><strong>>></strong></td>
+        <td>Binary Right Shift Operator. The left operands value is moved right by the number of bits specified by the right operand.</td>
+        <td>A >> 2 will give 15 which is 0000 1111</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+  <p><strong>Example:</strong></p>
+  <code>// CPP Program to demonstrate the Bitwise Operators
+#include iostream
+using namespace std;
+
+int main()
+{
+	int a = 6, b = 4;
+
+	// Binary AND operator
+	cout << "a & b is " << (a & b) << endl;
+
+	// Binary OR operator
+	cout << "a | b is " << (a | b) << endl;
+
+	// Binary XOR operator
+	cout << "a ^ b is " << (a ^ b) << endl;
+
+	// Left Shift operator
+	cout << "a<<1 is " << (a << 1) << endl;
+
+	// Right Shift operator
+	cout << "a>>1 is " << (a >> 1) << endl;
+
+	// One’s Complement operator
+	cout << "~(a) is " << ~(a) << endl;
+
+	return 0;
+}
+
+  </code>
+  <p><h2>Assignment Operators</h2></p>
+  <p>There are following assignment operators supported by C++ language −</p>
+<div class="table" style="margin:-16px 0">
+  <table class="data">
+    <thead>
+      <tr>
+        <th style="width:10%">Operator</th>
+        <th style="width:50%">Description</th>
+        <th style="width:40%">Example</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>=</strong></td>
+        <td>Simple assignment operator, Assigns values from right side operands to left side operand.</td>
+        <td>C = A + B will assign value of A + B into C</td>
+      </tr>
+      <tr>
+        <td><strong>+=</strong></td>
+        <td>Add AND assignment operator, It adds right operand to the left operand and assign the result to left operand.</td>
+        <td>C += A is equivalent to C = C + A</td>
+      </tr>
+      <tr>
+        <td><strong>-=</strong></td>
+        <td>Subtract AND assignment operator, It subtracts right operand from the left operand and assign the result to left operand</td>
+        <td>C -= A is equivalent to C = C - A</td>
+      </tr>
+      <tr>
+        <td><strong>*=</strong></td>
+        <td>Multiply AND assignment operator, It multiplies right operand with the left operand and assign the result to left operand</td>
+        <td>C *= A is equivalent to C = C * A</td>
+      </tr>
+      <tr>
+        <td><strong>/=</strong></td>
+        <td>Divide AND assignment operator, It divides left operand with the right operand and assign the result to left operand</td>
+        <td>C /= A is equivalent to C = C / A</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+  <p><strong>Example:</strong></p>
+  <code>// CPP Program to demonstrate the Assignment Operators
+#include iostream
+using namespace std;
+
+int main()
+{
+	int a = 6, b = 4;
+
+	// Assignment Operator
+	cout << "a = " << a << endl;
+
+	// Add and Assignment Operator
+	cout << "a += b is " << (a += b) << endl;
+
+	// Subtract and Assignment Operator
+	cout << "a -= b is " << (a -= b) << endl;
+
+	// Multiply and Assignment Operator
+	cout << "a *= b is " << (a *= b) << endl;
+
+	// Divide and Assignment Operator
+	cout << "a /= b is " << (a /= b) << endl;
+
+	return 0;
+}
+</code>
+  <p><h2>Operators Precedence in C++</h2></p>
+  <p>Operator precedence determines the grouping of terms in an expression. This affects how an expression is evaluated. Certain operators have higher precedence than others; for example, the multiplication operator has higher precedence than the addition operator −</p>
+  <p>For example x = 7 + 3 * 2; here, x is assigned 13, not 20 because operator * has higher precedence than +, so it first gets multiplied with 3*2 and then adds into 7.</p>
+  <p>Here, operators with the highest precedence appear at the top of the table, those with the lowest appear at the bottom. Within an expression, higher precedence operators will be evaluated first.</p>
+<div class="table" style="margin:-16px 0">
+  <table class="data">
+    <thead>
+      <tr>
+        <th style="width:25%">Category</th>
+        <th style="width:50%">Operator</th>
+        <th style="width:25%">Associativity</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Postfix</td>
+        <td>() [] -> . ++ - -</td>
+        <td>Left to right</td>
+      </tr>
+      <tr>
+        <td>Unary</td>
+        <td>+ - ! ~ ++ - - (type)* & sizeof</td>
+        <td>Right to left</td>
+      </tr>
+      <tr>
+        <td>Multiplicative</td>
+        <td>* / %</td>
+        <td>Left to right</td>
+      </tr>
+      <tr>
+        <td>Additive</td>
+        <td>+ -</td>
+        <td>Left to right</td>
+      </tr>
+      <tr>
+        <td>Shift</td>
+        <td><< >></td>
+        <td>Left to right</td>
+      </tr>
+      <tr>
+        <td>Relational</td>
+        <td>< <= > >=</td>
+        <td>Left to right</td>
+      </tr>
+      <tr>
+        <td>Equality</td>
+        <td>== !=</td>
+        <td>Left to right</td>
+      </tr>
+      <tr>
+        <td>Bitwise AND</td>
+        <td>&</td>
+        <td>Left to right</td>
+      </tr>
+      <tr>
+        <td>Bitwise XOR</td>
+        <td>^</td>
+        <td>Left to right</td>
+      </tr>
+      <tr>
+        <td>Bitwise OR</td>
+        <td>|</td>
+        <td>Left to right</td>
+      </tr>
+      <tr>
+        <td>Logical AND</td>
+        <td>&&</td>
+        <td>Left to right</td>
+      </tr>
+      <tr>
+        <td>Logical OR</td>
+        <td>||</td>
+        <td>Left to right</td>
+      </tr>
+      <tr>
+        <td>Conditional</td>
+        <td>?:</td>
+        <td>Right to left</td>
+      </tr>
+      <tr>
+        <td>Assignment</td>
+        <td>= += -= *= /= %=>>= <<= &= ^= |=</td>
+        <td>Right to left</td>
+      </tr>
+      <tr>
+        <td>Comma</td>
+        <td>,</td>
+        <td>Left to right</td>
+      </tr>
+      </article>
+  </section>
+  </div>
+      </main>
+      </body>
+      </html>    
